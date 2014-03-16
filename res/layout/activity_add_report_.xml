@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddReport_Activity" >
+
+    <Button
+        android:id="@+id/Enviar_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DescricaoForm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/DescricaoForm"
+        android:layout_marginBottom="16dp"
+        android:text="Enviar" />
+
+    <EditText
+        android:id="@+id/DescricaoForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EmailForm"
+        android:layout_alignRight="@+id/EmailForm"
+        android:layout_below="@+id/EmailForm"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Breve descrição do problema"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/EmailForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddImageButton"
+        android:layout_alignRight="@+id/AddImageButton"
+        android:layout_below="@+id/AddImageButton"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/AddImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Adicionar Imagem" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AddImageButton"
+        android:layout_alignLeft="@+id/AddImageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/AddImageButton"
+        android:layout_marginBottom="25dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_camera" />
+
+</RelativeLayout>
