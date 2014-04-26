@@ -67,7 +67,7 @@ public class AddReport_Activity extends Activity {
 	public  void postData() {
 	    // Create a new HttpClient and Post Header
 	    HttpClient httpclient = new DefaultHttpClient();
-	    HttpPost httppost = new HttpPost("http://www.yoursite.com/script.php");
+	    HttpPost httppost = new HttpPost("http://www.yourcoolsite.com/script.php");
 
 	    try {
 	        // Add your data

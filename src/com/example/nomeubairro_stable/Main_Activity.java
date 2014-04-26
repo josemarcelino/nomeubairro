@@ -4,11 +4,10 @@ import com.example.nomeubairro_stable.GPSTracker;
 import com.example.nomeubairro_stable.R;
 import com.example.nomeubairro_stable.util.SystemUiHider;
 
-
+/*
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
-
-
+*/
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
@@ -103,7 +102,7 @@ public class Main_Activity extends Activity {
         
         
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
-        final View contentView = findViewById(R.id.fullscreen_content);
+        final View contentView = findViewById(R.id.fullscreen_content_controls);
 
         // Set up an instance of SystemUiHider to control the system UI for
         // this activity.
