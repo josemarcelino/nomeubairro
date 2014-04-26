@@ -1,10 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
-    xmlns:tools="http://schemas.android.com/tools" 
-    android:layout_width="match_parent" 
-    android:layout_height="match_parent"
-     android:background="#d1e8f0" 
-     tools:context=".FullscreenActivity">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content_controls"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d1e8f0"
+    tools:context=".MainActivity" >
+     
      <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -43,6 +44,5 @@
         android:layout_margin="50dp"
         android:background="@drawable/redbutton"
         android:text="@string/reportarnovo" />
-
 </RelativeLayout>
 
