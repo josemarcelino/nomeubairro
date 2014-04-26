@@ -4,11 +4,10 @@ import com.example.nomeubairro_stable.GPSTracker;
 import com.example.nomeubairro_stable.R;
 import com.example.nomeubairro_stable.util.SystemUiHider;
 
-
+/*
 import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
-
-
+*/
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
