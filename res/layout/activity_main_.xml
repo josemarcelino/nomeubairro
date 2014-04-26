@@ -1,59 +1,48 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
     xmlns:tools="http://schemas.android.com/tools" 
     android:layout_width="match_parent" 
     android:layout_height="match_parent"
      android:background="#d1e8f0" 
      tools:context=".FullscreenActivity">
-<TextView android:id="@+id/textView1" 
-    android:layout_width="fill_parent"
-    
-     android:layout_height="wrap_content" 
-     android:layout_marginTop="130dp" 
-     
-     android:text="No Meu Bairro"
-      android:gravity="center"
-     
-      android:textStyle="bold"
-      
-       android:textColor="#a5352b" 
-       android:textAppearance="?android:attr/textAppearanceMedium" 
-       
-       android:textSize="40dp"/>
 
-<TextView android:id="@+id/textView1"
-    
-     android:layout_width="fill_parent" 
-     android:layout_height="wrap_content" 
-     android:layout_marginTop="200dp"
-      android:text="Ajuda a resolver os problemas do teu bairro." 
-      android:gravity="center"
-       android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000000" 
-        android:textSize="30dp"/>
-<!--
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="94dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/red_bairro"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    
--->
-<FrameLayout android:layout_width="match_parent" 
-    android:layout_height="match_parent"
-     android:fitsSystemWindows="true">
-<LinearLayout android:id="@+id/fullscreen_content_controls" 
-    style="?buttonBarStyle" 
-    android:layout_width="match_parent"
-     android:layout_height="wrap_content" 
-     android:layout_gravity="bottom|center_horizontal"
-      android:background="@color/black_overlay"
-       android:orientation="horizontal"
-        tools:ignore="UselessParent">
-<Button android:id="@+id/Reportar_Novo"
-     style="?buttonBarButtonStyle"
-      android:layout_width="0dp" 
-      android:layout_height="wrap_content" 
-      android:layout_weight="1" 
-      android:text="Reportar Problema"/>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Reportar_Novo"
+        style="@style/Botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_margin="50dp"
+        android:background="@drawable/redbutton"
+        android:text="@string/reportarnovo" />
+
+</RelativeLayout>
 

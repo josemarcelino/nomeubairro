@@ -1,5 +1,12 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
+    <color name="red_bairro">#A84038</color>
+    <color name="brown_bairro">#942a25</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_red">#A00000</color>
+    <color name="black">#000000 </color>
+    <color name="red_top">#da4f49</color>
+    <color name="red_bottom">#ee5f5b</color>
 
 </resources>
